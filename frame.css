@@ -1,0 +1,46 @@
+.item {
+  list-style-type: none;
+  position: relative;
+  display: inline-block;
+  background-color: black;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.7) 0 1rem 2rem 0; }
+  .item:before, .item:after {
+    content: ' ';
+    display: block;
+    background-image: url(https://dl.dropboxusercontent.com/u/20104014/codepen/frame-h.png);
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    height: 2rem;
+    width: 100%; }
+  .item:before {
+    background-position: top center;
+    top: 0; }
+  .item:after {
+    background-position: bottom center;
+    bottom: 0; }
+
+.inner {
+  position: relative;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.7) 0 0 1.5rem 0 inset; }
+  .inner:before, .inner:after {
+    content: ' ';
+    background-image: url(https://dl.dropboxusercontent.com/u/20104014/codepen/frame-v.png);
+    display: block;
+    background-size: cover;
+    position: absolute;
+    top: -2rem;
+    width: 2rem;
+    height: calc(100% + 2rem * 2); }
+  .inner:before {
+    background-position: left center;
+    left: -2rem; }
+  .inner:after {
+    background-position: right center;
+    right: -2rem; }
+  .inner img {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.2); }

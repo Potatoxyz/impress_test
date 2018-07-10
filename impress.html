@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="./impress.css">
+<link rel="stylesheet" href="./frame.css">
+<body>
+<style>
+    body{
+        margin: 0;
+    }
+    .link{
+        color:dodgerblue;
+        text-decoration: underline;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .step{
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    p{
+        width: 100%;
+    }
+    img{
+        width: 100%;
+    }
+</style>
+<div id="impress">
+
+    <div class="step" data-x="0" data-y="0">
+        <h1>德玛特网络科技</h1>
+        <p style="text-align: center">公司活动&&环境相册</p>
+    </div>
+    <div class="step" data-x="-2500" data-y="-2500" data-z="-3000" data-rotate="-45">
+        <figure class="item">
+            <div class="inner">
+                <img src="http://placekitten.com/g/400/400" />
+            </div>
+        </figure>
+    </div>
+    <div class="step" data-x="200" data-y="1000" data-rotate="45">
+        <figure class="item">
+            <div class="inner">
+                <img src="http://placehold.it/750x350" alt="">
+            </div>
+        </figure>
+    </div>
+    <div class="step" data-x="300" data-y="2000" data-rotate="90">
+        <figure class="item">
+            <div class="inner">
+                <img src="http://placehold.it/750x350" alt="">
+            </div>
+        </figure>
+    </div>
+    <div class="step" data-x="400" data-y="3000" data-rotate="135">
+        <figure class="item">
+            <div class="inner">
+                <img src="http://placehold.it/750x350" alt="">
+            </div>
+        </figure>
+    </div>
+    <div class="step" data-x="500" data-y="4000" data-rotate="180">
+        <figure class="item">
+            <div class="inner">
+                <img src="http://placehold.it/750x350" alt="">
+            </div>
+        </figure>
+    </div>
+    <div class="step" data-x="600" data-y="5000" data-rotate="225">
+        <figure class="item">
+            <div class="inner">
+                <img src="http://placehold.it/750x350" alt="">
+            </div>
+        </figure>
+    </div>
+    <div class="step" data-x="300" data-y="6000" data-rotate="270">
+        <figure class="item">
+            <div class="inner">
+                <img src="http://placehold.it/750x350" alt="">
+            </div>
+        </figure>
+    </div>
+    <div class="step" data-x="300" data-y="7000" data-rotate="315">
+        <figure class="item">
+        <div class="inner">
+            <img src="http://placehold.it/750x350" alt="">
+        </div>
+    </figure>
+    </div>
+    <div class="step" data-x="700" data-y="8000" data-rotate="360">
+        <figure class="item">
+            <div class="inner">
+                <img src="http://placehold.it/750x350" alt="">
+            </div>
+        </figure>
+    </div>
+    <div class="step" data-x="800" data-y="9000" data-rotate="405">
+        <figure class="item">
+            <div class="inner">
+                <img src="http://placehold.it/750x350" alt="">
+            </div>
+        </figure>
+    </div>
+    <div class="step" data-x="900" data-y="10000" data-rotate="450">
+        <figure class="item">
+            <div class="inner">
+                <img src="http://placehold.it/750x350" alt="">
+            </div>
+        </figure>
+    </div>
+    <div class="step" data-x="1000" data-y="9000" data-z="90000" data-rotate="450">
+        <p>还不错吧？</p>
+    </div>
+    <div class="step" data-x="1000" data-y="9000" data-z="190000" data-rotate="450">
+        <p>来看看<span class="link">英才招聘</span>吧！</p>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/impress.js/0.5.3/impress.min.js"></script>
+<script>
+    window.onload=function () {
+        impress().init();
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+$frameWidth: 2rem;
+$cacheWidth: 1.5rem;
+@mixin box-shadow($pro){
+  box-shadow: $pro;
+}
+@mixin background-size($pro){
+  background-size: $pro;
+}
+.item {
+  list-style-type: none;
+  position: relative;
+  display: inline-block;
+  background-color: black;
+  padding: $frameWidth;
+  @include box-shadow(rgba(black, 0.7) 0 1rem 2rem 0);
+
+  &:before, &:after {
+    content: ' ';
+    display: block;
+    background-image: url(https://dl.dropboxusercontent.com/u/20104014/codepen/frame-h.png);
+    @include background-size(cover);
+    position: absolute;
+    left: 0;
+    height: $frameWidth;
+    width: 100%;
+  }
+  &:before {
+    background-position: top center;
+    top: 0;
+  }
+  &:after {
+    background-position: bottom center;
+    bottom: 0;
+  }
+}
+
+.inner {
+  position: relative;
+  padding: $cacheWidth;
+  background-color: white;
+  @include box-shadow(rgba(black, 0.7) 0 0 1.5rem 0 inset);
+
+  &:before, &:after {
+    content: ' ';
+    background-image: url(https://dl.dropboxusercontent.com/u/20104014/codepen/frame-v.png);
+    display: block;
+    @include background-size(cover);
+    position: absolute;
+    top: -$frameWidth;
+    width: $frameWidth;
+    height: calc(100% + #{$frameWidth} * 2);
+  }
+  &:before {
+    background-position: left center;
+    left: -$frameWidth;
+  }
+  &:after {
+    background-position: right center;
+    right: -$frameWidth;
+  }
+
+  img {
+    display: block;
+    border: 1px solid rgba(black, 0.2);
+  }
+}
